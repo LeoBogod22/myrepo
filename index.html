@@ -1,45 +1,229 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Zombie Attack</title>
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/press-start-2p" type="text/css" />
-    <link rel='stylesheet' type='text/css' href='app/assets/style/canvas.css' />
-    <script src='./bundle.js?2'></script><script src = "https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.js"></script>
-  </head>
-  <body>
-    <div>
+<html lang="en">
 
-      <div class="main-container">
-        <div class="title">
-          <br/>
-          <h1>Zombie Attack</h1>
-        </div>
-        <div class='credits'>
-          <span>
-            <h3>Created By Leo Bogod</h3>
-            <br>
-            <a href="https://github.com/LeoBogod22/Zombie-Shooter" target="_blank">
-              <i class="fa fa-github" aria-hidden="true"></i>
-              <img src="app/assets/images/github.png">
-            </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Live Resume :: Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/live-resume.css">
+</head>
 
-          </span>
-        </div>
-      </div>
-      <div class="canvas-container">
-        <canvas id='background-canvas' width='800' height='400'></canvas>
-        <canvas id='canvas' width='800' height='400'></canvas>
-      </div>
-      <script>
-      var myMusic = new Audio ("mu.mp3");
-       myMusic.play();
+<body>
+    <header>
+        <button class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto"><img src="assets/images/share.svg" alt="share" class="btn-img">
+            SHARE</button>
+        <nav class="collapsible-nav" id="collapsible-nav">
+            <a href="index.html" class="nav-link active">HOME</a>
 
+            <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
+          
+            <a href="contact.html" class="nav-link">CONTACT</a>
+        </nav>
+        <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
+            data-target="collapsible-nav"><img src="assets/images/hamburger.svg" alt="hamburger"></button>
+    </header>
+    <div class="content-wrapper">
+        <aside>
+            <div class="profile-img-wrapper">
+                <img src="https://mattfarley.ca/img/mf-avatar.svg" alt="profile">
+            </div>
+            <h1 class="profile-name">Leo Bogod</h1>
+            <div class="text-center">
+                <span class="badge badge-white badge-pill profile-designation">UI / UX Designer</span>
+            </div>
+            <nav class="social-links">
+                <a href="#!" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/leo-bogod-/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://soundcloud.com/leonbogod" class="social-link"><i class="fab fa-soundcloud"></i></a>
+                <a href="#!" class="social-link"><i class="fab fa-dribbble"></i></a>
+                <a href="https://github.com/LeoBogod22" class="social-link"><i class="fab fa-github"></i></a>
+            </nav>
+            <div class="widget">
 
+                <div class="widget-content">
 
+                <a class="page-scroll" href="https://drive.google.com/file/d/1-AG5_OXc0S2-fkr4kHRcoN64e6nmEIHj/view?usp=sharing">    <button class="btn btn-download-cv btn-primary rounded-pill">  <img src="assets/images/download.svg" alt="download"
+                        class="btn-img">View Resume </button> </a>
+                </div>
+            </div>
+            <div class="widget card">
+                <div class="card-body">
+                    <div class="widget-content">
+                        <h5 class="widget-title card-title">LANGUAGES</h5>
+                        <p>Javascript </p>
+                        <p>Python </p>
+                        <p>Java</p>
+                        <p>SQL</p>
 
+                    </div>
+                </div>
+            </div>
+            <div class="widget card">
+                <div class="card-body">
+                    <div class="widget-content">
+                        <h5 class="widget-title card-title">Other Technologies</h5>
+                        <p>React.js</p>
+                        <p>Node.js</p>
+                        <p>Sass</p>
+                        <p>HTML5</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <section class="intro-section">
+                <h2 class="section-title">Hello, Im Leo. </h2>
+                <p>I'm a Software Developer from NYC  specializing in rapdily building software compaines and high quality web applications.
 
-      </script>
+I Enjoy challenges and I'm quietly confident, naturally curious, and perpetually working on improving my chops one  problem at a time.
+
+I believe that the best code is the code you don’t have to write...</p>
+                <a href="contact.html" class="btn btn-primary btn-hire-me">Contact Me</a>
+            </section>
+            <section class="resume-section">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="section-title">Education</h2>
+                        <ul class="time-line">
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2017-2020</span>
+                                <h6 class="time-line-item-title">BS Computer Science</h6>
+                                <p class="time-line-item-subtitle">NYIT</p>
+                                <p class="time-line-item-content">BS in Computer Science. Involved in student government, Chess , Cyber Security & business clubs</p>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">May 2020 </span>
+                                <h6 class="time-line-item-title">Finalist of Space App Covid Challenges</h6>
+                                <p class="time-line-item-subtitle">Nasa Covid-19 space apps challenge</p>
+                                <p class="time-line-item-content">Helped build  a tool that allows users to view statistics for each county in the United States in terms of COVID-19 risk levels, as well as a rating on a 1-100 scale for each county in three categories and overall, which allows users to both see their level of safety in their own location, and also potentially find locations where they would be safer from the virus.
+                                </p>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">July 2020</span>
+                                <h6 class="time-line-item-title">Fireside Chat Foundation </h6>
+                                <p class="time-line-item-subtitle">NYIT</p>
+                                <p class="time-line-item-content">Helped Organize a non profit cyber security organization  that raised over $1,500+ through Indiegogo campaigns.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+<br></br>
+                    <div style="
+    margin-top: 10px;"
+ class="col-lg-6">
+
+                      <h2 class="section-title">Work Expereince</h2>
+
+                        <ul class="time-line">
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">May 2020 - Sep 2020</span>
+                                <h6 class="time-line-item-title">Census Enumerator</h6>
+                                <p class="time-line-item-subtitle">Census.gov</p>
+                                <p class="time-line-item-content">Worked for the Census Bureau and helped count the population for the 2020 Census.</p>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2017 - 2019</span>
+                                <h6 class="time-line-item-title">Web Developer Internship </h6>
+                                <p class="time-line-item-subtitle">A&I Broadway Realty </p>
+                                <p class="time-line-item-content">Created Real-Estate Platform for comparing properties using Rails ,Fixed bugs, added new features, tweaked deployment details as needed.
+                                </p>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">May 2019 - Aug 2019</span>
+                                <h6 class="time-line-item-title">Software Developer Internship</h6>
+                                <p class="time-line-item-subtitle">Surfside</p>
+                                <p class="time-line-item-content">Create UI Mockups and Translated UI/UX design wire frames to actual code.
+                                  , Built reusable code and libraries for future use and edited UI/UX mockups .
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="services-section">
+                <h2 class="section-title">My Skills</h2>
+                <h6 class="section-subtitle">WHAT I LOVE TO DO</h6>
+
+                <div class="row">
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <img src="assets/images/001-target.svg" alt="target">
+                        </div>
+                        <div class="media-body">
+                            <h5 class="service-title">Learn</h5>
+                            <p class="service-description">I live to learn. I believe that there is a learning experience in every failure. I strive to learn from my personal losses & seek out for advice to gain a broader understanding of the world.</p>
+                        </div>
+                    </div>
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <img src="assets/images/003-idea.svg" alt="bulb">
+                        </div>
+                        <div class="media-body">
+                            <h5 class="service-title">DESIGN</h5>
+                            <p class="service-description">I love to design and sketch new products - I want to develop products that perform complex functions with simple commands. I believe clean user interface is the key to a sustainable product.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <img src="assets/images/002-development.svg" alt="development">
+                        </div>
+                        <div class="media-body">
+                            <h5 class="service-title">Prototype</h5>
+                            <p class="service-description">I am a huge fan of creating different prototypes of new ideas. I believe that there lies a certain beauty of producing new iterations of products that exceeds the former ones.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <img src="assets/images/004-smartphone.svg" alt="smartphone">
+                        </div>
+                        <div class="media-body">
+                            <h5 class="service-title">VOLUNTEER</h5>
+                            <p class="service-description">I volunteered at my high school during summer to help grow its Speech and Debate Program - I absolutely love working with kids who want to voice their opinions about the world!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="testimonial-section">
+                <div id="testimonialCarousel" class="testimonial-carousel carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p class="testimonial-content">Leo has a very strong presentation presence. His energy, incisive thinking and his ability to break down concepts with a good amount of charisma makes him a natural leader. He is one of the most creative and hard-working students I've ever taught..</p>
+
+                            <p class="testimonial-name">Nout Golstein , Professor  , NYIT</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="testimonial-content">Leo is a brilliant young man and I am excited to see what he does in the future. He is a fantastic leader who understands others and acts with confidence, empathy and determination. I am very glad I had the chance to meet and work with Leo..</p>
+
+                            <p class="testimonial-name">Michael Blanche , CEO , Surfside</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="testimonial-content">Leo  was an integral member of our team who did whatever it took to get the job done on time for many concurrent projects. He showed special aptitude for managing large, complex datasets through his Excel and Python scripting skills. Leo is a creative problem-solver and a great addition to any team!.</p>
+
+                            <p class="testimonial-name">Elliot Shirman, CEO , A&I Broadway Realty</p>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+                        <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+                    </ol>
+                </div>
+            </section>
+
+            <footer> Copyright © 2017 Leo Bogod. All rights reserved.</footer>
+        </main>
     </div>
-  </body>
-  </html>
+    <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendors/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/live-resume.js"></script>
+</body>
+
+</html>
